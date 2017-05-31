@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r6p18.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue May 30 10:28:25 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-beginner/exam_20170530/dgerard
+
+= Git history ==================================================================
+$> git -C /var/folders/sb/6gn6ffm95s7bh7k51d2yrv940000gp/T/tmppGi9ri/user log --pretty='%H - %an, %ad : %s'
+69a0666e766edc17a7cb11529ac026e717a7814d - Exam 42, Tue May 30 10:27:27 2017 -0700 : yeeeeeeeeeeeeehaw
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sb/6gn6ffm95s7bh7k51d2yrv940000gp/T/tmppGi9ri/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  252 May 30 10:28 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 30 10:28 sort_int_tab
+
+/var/folders/sb/6gn6ffm95s7bh7k51d2yrv940000gp/T/tmppGi9ri/user/sort_int_tab:
+total 8
+-rw-r--r--  1 deepthought  deepthought  454 May 30 10:28 sort_int_tab.c
+ 
+= sort_int_tab =================================================================
+$> gcc -Wextra -Wall -Werror main.c sort_int_tab.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./50hevvugdtvedi5344fflibx
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
